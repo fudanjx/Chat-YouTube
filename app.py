@@ -23,7 +23,7 @@ class Text_Expert:
             [self.system_prompt, self.user_prompt]
         )
 
-        self.chat = ChatAnthropic(model='claude-v1-100k', max_tokens_to_sample=512, streaming=True, callbacks=[StreamlitCallbackHandler()])
+        self.chat = ChatAnthropic(model='claude-v1-100k', max_tokens_to_sample=700, streaming=True, callbacks=[StreamlitCallbackHandler()])
 
         self.chain = LLMChain(llm=self.chat, prompt=full_prompt_template)
 
