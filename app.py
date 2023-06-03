@@ -69,7 +69,7 @@ def load_transcript(url):
 
 st.set_page_config(page_title="Bot-Tube", page_icon="🤖")
 # create a streamlit app
-st.title("Personal YouTube Review Assistant")
+st.title("BotTube-Youtube Review Expert")
 st.write("(You may refresh the page to start over)")
 anthropic.api_key = st.text_input("###### Enter Anthropic API Key", type="password")
 os.environ['ANTHROPIC_API_KEY']= anthropic.api_key
