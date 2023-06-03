@@ -67,6 +67,7 @@ def load_transcript(url):
 
     return text
 
+st.set_page_config(page_title="Bot-Tube", page_icon="🤖")
 # create a streamlit app
 st.title("Personal YouTube Review Assistant")
 st.write("(You may refresh the page to start over)")
